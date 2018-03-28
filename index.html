@@ -4,18 +4,119 @@
     <title>Check yo self b4 you before wreck yo self</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-      
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	
+        <h1 class="text-center">NHL Trivia Game</h1>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div id="start" class="col-sm-12">
+                <button>Click to Start</button>
+                </div>
+                <div id="countdown"></div>
+                <div id="question"></div>
+                <div id="choices"></div>
+            </div>
+        </div>
+        <div class="firstquestion">
+        <h1>Who was the first player in NHL history to score 100 points in a single season, when he scored 126 total points? </h1>
+        <div class="response1" data-name="PE">
+      <label>
+        <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+           <disabled>Phil Esposito</disabled>
+      </label>
+    </div>
+    <div class="response1" data-name="CC">
+      <label>
+        <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+        Chris Celios
+      </label>
+    </div>
+    <div class="response1" data-name="DW">
+      <label>
+        <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3">
+       Doug Weight
+      </label>
+    </div>
+    <div class="response1"  data-name="SY">
+      <label>
+        <input type="radio" name="optionsRadios1" id="optionsRadios4" value="option4">
+        Steve Yzerman
+      </label>
+    </div>
+    </div>
+        <div class="secondquestion">
+        <h1>Who had their Detroit Red Wing number 12 retired in 1995?</h1>
+        <div class="response2" data-name="SA">
+      <label>
+        <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1">
+        Sid Abel 
+      </label>
+    </div>
+    <div class="response2" data-name="ML">
+      <label>
+        <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+        Mario Lemieux
+      </label>
+    </div>
+    <div class="response2" data-name="SS">
+    <label>
+        <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3">
+        Scott Stevens 
+      </label>
+    </div>
+    <div class="response2" data-name="BO">
+      <label>
+        <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4">
+        Bobby Orr
+      </label>
+    </div>
+    </div>
+    <div class="thirdquestion">
+        <h1>7 Which of the following set a record for being the youngest 100 point player?</h1>
+        <div class="response3" data-name="WG">
+      <label>
+        <input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1">
+        Wayne Gretzky
+      </label>
+    </div>
+    <div class="response3" data-name="DH">
+      <label>
+        <input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2">
+        Dale Hawerchuck 
+      </label>
+    </div>
+    <div class="response3" data-name="RM">
+      <label>
+        <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3">
+        Rick MacLeish
+      </label>
+    </div>
+    <div class="response3" data-name="SM">
+      <label>
+        <input type="radio" name="optionsRadios3" id="optionsRadios4" value="option4">
+        Stan Mikita 
+      </label>
+    </div>
+    </div>
+    <div class="Box">
+    <h1 class="logo">Your Results!</h1>
+        <div class="Correct"></div>
+        <div class="Wrong"></div>
+        <div class="Unanswered"></div>
+    <!--<button id="again">Click to Play Again!</button>-->
+    </div>
+        
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>	
+    <script type="text/javascript" src="javascript/app.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
 </html>
